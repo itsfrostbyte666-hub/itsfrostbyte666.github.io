@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <style>
-        /* Modern CSS Styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -25,41 +24,48 @@
             font-weight: bold;
             color: #38bdf8;
         }
-        nav a {
-            color: #94a3b8;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            transition: color 0.2s;
-        }
-        nav a:hover {
-            color: #38bdf8;
-        }
         .hero {
             text-align: center;
-            padding: 5rem 1rem;
+            padding: 4rem 1rem 2rem;
             max-width: 800px;
             margin: 0 auto;
         }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+        
+        /* Styled Link Bar Box */
+        .link-bar-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #1e293b;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
-        .hero p {
+        .link-bar-title {
             font-size: 1.2rem;
-            color: #94a3b8;
-            margin-bottom: 2rem;
+            margin-bottom: 0.5rem;
+            color: #f8fafc;
         }
-        .btn {
-            background-color: #38bdf8;
+        .link-bar-desc {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-bottom: 1.2rem;
+        }
+        .link-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
             color: #0f172a;
-            padding: 0.8rem 1.5rem;
+            padding: 0.9rem 2rem;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            display: inline-block;
+            font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .btn:hover {
-            background-color: #7dd3fc;
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
         }
     </style>
 </head>
@@ -67,17 +73,19 @@
 
     <header>
         <div class="logo">Frostbyte Site</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-        </nav>
     </header>
 
     <main class="hero">
-        <h1>Welcome to My Website</h1>
-        <p>This is a custom user interface running directly on GitHub Pages for free.</p>
-        <a href="#" class="btn">Explore More</a>
+        <h1>Welcome to My Site</h1>
+        
+        <!-- Styled Link Bar -->
+        <div class="link-bar-container">
+            <div class="link-bar-title">Access Content</div>
+            <p class="link-bar-desc">Click the button below to open the link.</p>
+            <a href="https://links.lootlabs.gg/s?VpeESUEG" class="link-btn" target="_blank" rel="noopener noreferrer">
+                Open Link
+            </a>
+        </div>
     </main>
 
 </body>
